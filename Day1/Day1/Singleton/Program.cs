@@ -8,7 +8,7 @@ namespace Day1.Singleton
 {
     class Program
     {
-        static void Singleton(string[] args)
+        public static void Singleton(string[] args)
         {
             // ################## Singleton ###################
             Console.WriteLine("Welcome to Singleton");

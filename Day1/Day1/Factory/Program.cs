@@ -8,7 +8,7 @@ namespace Day1.Factory
 {
     class Program
     {
-        static void Factory(string[] args)
+        public static void Factory(string[] args)
         {
             // ################## Factory #####################
             Console.WriteLine();
