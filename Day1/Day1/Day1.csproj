@@ -59,6 +59,14 @@
     <Compile Include="State\IAmOn.cs" />
     <Compile Include="State\ILightState.cs" />
     <Compile Include="State\LightContext.cs" />
+    <Compile Include="State\Login\ILoginBase.cs" />
+    <Compile Include="State\Login\Locked.cs" />
+    <Compile Include="State\Login\LoginBase.cs" />
+    <Compile Include="State\Login\LoginContext.cs" />
+    <Compile Include="State\Login\LoginFailed.cs" />
+    <Compile Include="State\Login\LoginSucceed.cs" />
+    <Compile Include="State\Login\NewLogin.cs" />
+    <Compile Include="State\Login\Program.cs" />
     <Compile Include="State\Program.cs" />
   </ItemGroup>
   <ItemGroup>
