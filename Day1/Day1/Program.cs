@@ -16,6 +16,8 @@ namespace Day1
             Day1.Singleton.Program.Singleton(args);
             // ################## Factory #####################
             Day1.Factory.Program.Factory(args);
+            // ################## State #######################
+            Day1.State.Program.State(args);
         }
     }
 }
