@@ -45,12 +45,14 @@
   <ItemGroup>
     <Compile Include="Factory\Car.cs" />
     <Compile Include="Factory\Motorcycle.cs" />
+    <Compile Include="Factory\Program.cs" />
     <Compile Include="Factory\Sugway.cs" />
     <Compile Include="Factory\Truck.cs" />
     <Compile Include="Factory\Vehicle.cs" />
     <Compile Include="Factory\VehicleFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Singleton\Program.cs" />
     <Compile Include="Singleton\Time.cs" />
   </ItemGroup>
   <ItemGroup>
