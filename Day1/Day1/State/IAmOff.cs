@@ -8,6 +8,12 @@ namespace Day1.State
 {
     class IAmOff : ILightState
     {
+        public ILightState Fix()
+        {
+            Console.WriteLine("Already working");
+            return this;
+        }
+
         public ILightState TurnOff()
         {
             Console.WriteLine("Light is already off...");

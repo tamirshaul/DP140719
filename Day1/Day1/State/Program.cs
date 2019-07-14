@@ -17,6 +17,10 @@ namespace Day1.State
             context.PressedOn();
             context.PressedOff();
             context.PressedOn();
+
+            context.Fix();
+            context.PressedOff();
+            context.PressedOn();
         }
     }
 }

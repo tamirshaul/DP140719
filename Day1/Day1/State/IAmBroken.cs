@@ -8,6 +8,11 @@ namespace Day1.State
 {
     class IAmBroken : ILightState
     {
+        public ILightState Fix()
+        {
+            Console.WriteLine("Fixing.. and turning off");
+            return new IAmOff();
+        }
         public ILightState TurnOff()
         {
             Console.WriteLine("Light is broken...");

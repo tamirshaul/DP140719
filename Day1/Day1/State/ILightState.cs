@@ -11,5 +11,6 @@ namespace Day1.State
         ILightState TurnOn();
 
         ILightState TurnOff();
+        ILightState Fix();
     }
 }

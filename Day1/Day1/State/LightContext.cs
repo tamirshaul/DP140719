@@ -24,5 +24,10 @@ namespace Day1.State
         {
             this.state = state.TurnOff();
         }
+
+        public void Fix()
+        {
+            this.state = state.Fix();
+        }
     }
 }

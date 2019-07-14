@@ -13,11 +13,12 @@ namespace Day1
         static void Main(string[] args)
         {
             // ################## Singleton ###################
-            Day1.Singleton.Program.Singleton(args);
+            //Day1.Singleton.Program.Singleton(args);
             // ################## Factory #####################
-            Day1.Factory.Program.Factory(args);
+            //Day1.Factory.Program.Factory(args);
             // ################## State #######################
             Day1.State.Program.State(args);
+            Console.ReadLine();
         }
     }
 }
