@@ -70,6 +70,10 @@
     <Compile Include="Prototype\Rectangle.cs" />
     <Compile Include="Prototype\Shape.cs" />
     <Compile Include="Prototype\ShapeHolder.cs" />
+    <Compile Include="Prototype\WebInfo\IPrototype.cs" />
+    <Compile Include="Prototype\WebInfo\Program.cs" />
+    <Compile Include="Prototype\WebInfo\WebInfo.cs" />
+    <Compile Include="Prototype\WebInfo\WebInfoFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
