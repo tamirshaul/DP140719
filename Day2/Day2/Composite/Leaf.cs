@@ -32,6 +32,11 @@ namespace Day2.Composite
             return null;
         }
 
+        public override bool IsBinary()
+        {
+            return true;
+        }
+
         public override void RemoveChild(Component c)
         {
             throw new NotSupportedException("Leaf element cannot delete childs!");

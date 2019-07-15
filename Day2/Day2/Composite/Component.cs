@@ -23,5 +23,6 @@ namespace Day2.Composite
         public abstract void Draw(string space);
 
         public abstract int Count();
+        public abstract bool IsBinary();
     }
 }

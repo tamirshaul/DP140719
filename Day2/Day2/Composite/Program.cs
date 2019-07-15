@@ -27,13 +27,17 @@ namespace Day2.Composite
             Component container2 = new Composite("Container 2");
             Component circle4 = new Leaf("Circle 2");
             Component circle5 = new Leaf("Circle 3");
+            Component circle6 = new Leaf("Circle 3");
 
             root.AddChild(container2);
             container2.AddChild(circle4);
             container2.AddChild(circle5);
+            container2.AddChild(circle6);
 
             root.Draw("|");
             root.Count();
+
+            root.IsBinary();
         }
     }
 }

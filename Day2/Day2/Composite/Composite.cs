@@ -43,6 +43,38 @@ namespace Day2.Composite
             return childs;
         }
 
+        public override bool IsBinary()
+        {
+            bool isBinary = true;
+            int counter = 0;
+            foreach (var c in childs)
+            {
+                if(c.GetChilds() == null)
+                {
+                    counter++;
+                }
+                else
+                {
+                    isBinary = isBinary && c.IsBinary();
+                }
+            }
+
+            if(counter != 2 && counter != 0)
+            {
+                isBinary = false;
+            }
+            if (!isBinary)
+            {
+                Console.WriteLine($"Composite { name } is NOT binary");
+            }
+            else
+            {
+                Console.WriteLine($"Composite { name } is binary");
+            }
+
+            return isBinary;
+        }
+
         public override void RemoveChild(Component c)
         {
             childs.Remove(c);
