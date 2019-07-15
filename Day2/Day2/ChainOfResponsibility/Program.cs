@@ -8,7 +8,7 @@ namespace Day2.ChainOfResponsibility
 {
     class Program
     {
-        public static void ChainOfResponsibility(string[] args)
+        public static void BillHandler(string[] args)
         {
             BillHandlerBase billHandler500 = new BillHandler500();
             BillHandlerBase billHandler200 = new BillHandler200();

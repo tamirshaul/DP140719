@@ -11,9 +11,13 @@ namespace Day2
         static void Main(string[] args)
         {
             // ###################### Chain Of Responsibility #######################
-            Day2.ChainOfResponsibility.Program.ChainOfResponsibility(args);
+            Day2.ChainOfResponsibility.Program.BillHandler(args);
 
             Day2.ChainOfResponsibility.LogLevel.Program.LogLevel(args);
+
+            // ########################## Composite #################################
+
+            Day2.Composite.Program.Composite(args);
 
             Console.ReadLine();
 

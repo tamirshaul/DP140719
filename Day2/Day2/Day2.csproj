@@ -57,11 +57,16 @@
     <Compile Include="ChainOfResponsibility\LogLevel\LogHandlerBase.cs" />
     <Compile Include="ChainOfResponsibility\LogLevel\Program.cs" />
     <Compile Include="ChainOfResponsibility\Program.cs" />
+    <Compile Include="Composite\Component.cs" />
+    <Compile Include="Composite\Composite.cs" />
+    <Compile Include="Composite\Leaf.cs" />
+    <Compile Include="Composite\Program.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
