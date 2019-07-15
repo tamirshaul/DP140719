@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E469430B-7372-4F2D-9264-46A6196EC8E1}</ProjectGuid>
+    <ProjectGuid>{84602D7F-424A-4489-AEEB-999C3DFE5B92}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Day1</RootNamespace>
-    <AssemblyName>Day1</AssemblyName>
+    <RootNamespace>Day2</RootNamespace>
+    <AssemblyName>Day2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,34 +43,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Factory\Car.cs" />
-    <Compile Include="Factory\Motorcycle.cs" />
-    <Compile Include="Factory\Program.cs" />
-    <Compile Include="Factory\Sugway.cs" />
-    <Compile Include="Factory\Truck.cs" />
-    <Compile Include="Factory\Vehicle.cs" />
-    <Compile Include="Factory\VehicleFactory.cs" />
+    <Compile Include="ChainOfResponsibility\BillHandler2.cs" />
+    <Compile Include="ChainOfResponsibility\BillHandler100.cs" />
+    <Compile Include="ChainOfResponsibility\BillHandler200.cs" />
+    <Compile Include="ChainOfResponsibility\BillHandler25.cs" />
+    <Compile Include="ChainOfResponsibility\BillHandler5.cs" />
+    <Compile Include="ChainOfResponsibility\BillHandler500.cs" />
+    <Compile Include="ChainOfResponsibility\BillHandlerBase.cs" />
+    <Compile Include="ChainOfResponsibility\LogLevel\HandleDebug.cs" />
+    <Compile Include="ChainOfResponsibility\LogLevel\HandleError.cs" />
+    <Compile Include="ChainOfResponsibility\LogLevel\HandleFatal.cs" />
+    <Compile Include="ChainOfResponsibility\LogLevel\HandleInfo.cs" />
+    <Compile Include="ChainOfResponsibility\LogLevel\LogHandlerBase.cs" />
+    <Compile Include="ChainOfResponsibility\LogLevel\Program.cs" />
+    <Compile Include="ChainOfResponsibility\Program.cs" />
+    <Compile Include="Composite\Component.cs" />
+    <Compile Include="Composite\Composite.cs" />
+    <Compile Include="Composite\Leaf.cs" />
+    <Compile Include="Composite\Program.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Singleton\Program.cs" />
-    <Compile Include="Singleton\Time.cs" />
-    <Compile Include="State\IAmBroken.cs" />
-    <Compile Include="State\IAmOff.cs" />
-    <Compile Include="State\IAmOn.cs" />
-    <Compile Include="State\ILightState.cs" />
-    <Compile Include="State\LightContext.cs" />
-    <Compile Include="State\Login\ILoginBase.cs" />
-    <Compile Include="State\Login\Locked.cs" />
-    <Compile Include="State\Login\LoginBase.cs" />
-    <Compile Include="State\Login\LoginContext.cs" />
-    <Compile Include="State\Login\LoginFailed.cs" />
-    <Compile Include="State\Login\LoginSucceed.cs" />
-    <Compile Include="State\Login\NewLogin.cs" />
-    <Compile Include="State\Login\Program.cs" />
-    <Compile Include="State\Program.cs" />
+    <Compile Include="Prototype\Circle.cs" />
+    <Compile Include="Prototype\IPrototype.cs" />
+    <Compile Include="Prototype\Point.cs" />
+    <Compile Include="Prototype\Program.cs" />
+    <Compile Include="Prototype\Rectangle.cs" />
+    <Compile Include="Prototype\Shape.cs" />
+    <Compile Include="Prototype\ShapeHolder.cs" />
+    <Compile Include="Prototype\WebInfo\IPrototype.cs" />
+    <Compile Include="Prototype\WebInfo\Program.cs" />
+    <Compile Include="Prototype\WebInfo\WebInfo.cs" />
+    <Compile Include="Prototype\WebInfo\WebInfoFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
