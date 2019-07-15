@@ -43,6 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChainOfResponsibility\BillHandler2.cs" />
+    <Compile Include="ChainOfResponsibility\BillHandler100.cs" />
+    <Compile Include="ChainOfResponsibility\BillHandler200.cs" />
+    <Compile Include="ChainOfResponsibility\BillHandler25.cs" />
+    <Compile Include="ChainOfResponsibility\BillHandler5.cs" />
+    <Compile Include="ChainOfResponsibility\BillHandler500.cs" />
+    <Compile Include="ChainOfResponsibility\BillHandlerBase.cs" />
+    <Compile Include="ChainOfResponsibility\LogLevel\HandleDebug.cs" />
+    <Compile Include="ChainOfResponsibility\LogLevel\HandleError.cs" />
+    <Compile Include="ChainOfResponsibility\LogLevel\HandleFatal.cs" />
+    <Compile Include="ChainOfResponsibility\LogLevel\HandleInfo.cs" />
+    <Compile Include="ChainOfResponsibility\LogLevel\LogHandlerBase.cs" />
+    <Compile Include="ChainOfResponsibility\LogLevel\Program.cs" />
+    <Compile Include="ChainOfResponsibility\Program.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

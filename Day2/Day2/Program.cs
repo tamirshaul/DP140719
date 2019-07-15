@@ -10,6 +10,13 @@ namespace Day2
     {
         static void Main(string[] args)
         {
+            // ###################### Chain Of Responsibility #######################
+            Day2.ChainOfResponsibility.Program.ChainOfResponsibility(args);
+
+            Day2.ChainOfResponsibility.LogLevel.Program.LogLevel(args);
+
+            Console.ReadLine();
+
         }
     }
 }
