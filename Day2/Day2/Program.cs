@@ -19,8 +19,10 @@ namespace Day2
 
             Day2.Composite.Program.Composite(args);
 
-            Console.ReadLine();
+            // ########################## Prototype #################################
+            Day2.Prototype.Program.Prototype(args);
 
+            Console.ReadLine();
         }
     }
 }

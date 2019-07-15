@@ -63,6 +63,13 @@
     <Compile Include="Composite\Program.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prototype\Circle.cs" />
+    <Compile Include="Prototype\IPrototype.cs" />
+    <Compile Include="Prototype\Point.cs" />
+    <Compile Include="Prototype\Program.cs" />
+    <Compile Include="Prototype\Rectangle.cs" />
+    <Compile Include="Prototype\Shape.cs" />
+    <Compile Include="Prototype\ShapeHolder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
