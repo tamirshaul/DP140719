@@ -17,6 +17,10 @@ namespace Day3
             // ####################### Adapter ############################
             
             Day3.Adapter.Program.AdapterQuestion(args);
+
+            // ################### Template Method ########################
+
+            Day3.TemplateMethod.Program.TemplateMethod(args);
         }
     }
 }
