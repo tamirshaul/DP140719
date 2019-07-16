@@ -1,15 +1,30 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Visitor;
+using Design_Patterns_Console.Day3.Adapter.DBData;
 
 namespace Day3.Visitor
 {
     public class Program
     {
-        public static void Visitor(string[] args)
+        public static void VisitorQuestion(string[] args)
         {
+            Liquor vodka = new Liquor(95);
+
+            Console.WriteLine(vodka);
+
+            IVisitor endOfYearVisitor = new EndOfYearTax();
+
+            Console.WriteLine($"Price after tax = {vodka.Accept(endOfYearVisitor)}");
+
+            ShopRent shop = new ShopRent();
+
+            Console.WriteLine(shop);
+
+            IVisitor oneShekelStore = new OneShekelStore();
+
+            Console.WriteLine($"Price at oneshekelstore = {shop.Accept(oneShekelStore)}");
+
+            Console.WriteLine($"Price after tax = {shop.Accept(endOfYearVisitor)}");
         }
     }
 }

@@ -43,10 +43,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter\Adapter3Dto2D.cs" />
+    <Compile Include="Adapter\D2NicePainter.cs" />
+    <Compile Include="Adapter\D2Shape.cs" />
+    <Compile Include="Adapter\D3NicePainter.cs" />
+    <Compile Include="Adapter\D3Shape.cs" />
+    <Compile Include="Adapter\DBData\BadStore.cs" />
+    <Compile Include="Adapter\DBData\BadStoreToPerfectStoreAdapter.cs" />
+    <Compile Include="Adapter\DBData\ClientData.cs" />
+    <Compile Include="Adapter\DBData\IDBData.cs" />
+    <Compile Include="Adapter\DBData\IDBWebData.cs" />
+    <Compile Include="Adapter\DBData\PerfectStore.cs" />
+    <Compile Include="Adapter\DBData\WebClientData.cs" />
+    <Compile Include="Adapter\ID2Painter.cs" />
+    <Compile Include="Adapter\ID3Painter.cs" />
     <Compile Include="Adapter\Program.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Visitor\Chocolate.cs" />
+    <Compile Include="Visitor\EndOfYearTax.cs" />
+    <Compile Include="Visitor\IVisitable.cs" />
+    <Compile Include="Visitor\IVisitor.cs" />
+    <Compile Include="Visitor\Liquor.cs" />
+    <Compile Include="Visitor\OneShekelStore.cs" />
+    <Compile Include="Visitor\Perfume.cs" />
+    <Compile Include="Visitor\ProductBase.cs" />
     <Compile Include="Visitor\Program.cs" />
+    <Compile Include="Visitor\ShopRent.cs" />
+    <Compile Include="Visitor\Tabacco.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

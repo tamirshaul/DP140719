@@ -12,16 +12,11 @@ namespace Day3
         {
             // ####################### Visitor ############################
 
-            Day3.Visitor.Program.Visitor(args);
+            Day3.Visitor.Program.VisitorQuestion(args);
 
             // ####################### Adapter ############################
             
-            Day3.Visitor.Program.Visitor(args);
-
-            // ####################### Memento ############################
-
-            Day3.Visitor.Program.Visitor(args);
-
+            Day3.Adapter.Program.AdapterQuestion(args);
         }
     }
 }
