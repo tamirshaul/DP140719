@@ -21,6 +21,8 @@ namespace Day3
             // ################### Template Method ########################
 
             Day3.TemplateMethod.Program.TemplateMethod(args);
+
+            Console.ReadLine();
         }
     }
 }
