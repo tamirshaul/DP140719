@@ -19,6 +19,10 @@ namespace Day4
             // #################### Proxy, Facade ##########################
 
             Day4.Facade.Program.Flight(args);
+
+            // ###################### Bridge ###############################
+
+            Day4.Bridge.Program.Bridge(args);
         }
     }
 }

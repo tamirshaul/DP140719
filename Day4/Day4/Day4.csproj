@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bridge\EntertainmentDevice.cs" />
+    <Compile Include="Bridge\Memir.cs" />
+    <Compile Include="Bridge\Program.cs" />
+    <Compile Include="Bridge\RemoteControl.cs" />
+    <Compile Include="Bridge\TV.cs" />
     <Compile Include="Builder\Hamburger.cs" />
     <Compile Include="Builder\HamburgerBuilder.cs" />
     <Compile Include="Builder\HamburgerFactoryMethod.cs" />
