@@ -15,6 +15,10 @@ namespace Day4
             Day4.Decorator.Program.Decorator(args);
 
             Day4.Decorator.Formula.Program.Calculator(args);
+
+            // #################### Proxy, Facade ##########################
+
+            Day4.Facade.Program.Flight(args);
         }
     }
 }
