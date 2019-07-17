@@ -13,6 +13,8 @@ namespace Day4
             // ###################### Decorator ############################
 
             Day4.Decorator.Program.Decorator(args);
+
+            Day4.Decorator.Formula.Program.Calculator(args);
         }
     }
 }

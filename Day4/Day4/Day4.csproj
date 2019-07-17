@@ -45,6 +45,14 @@
   <ItemGroup>
     <Compile Include="Decorator\BasePizza.cs" />
     <Compile Include="Decorator\CheeseTopping.cs" />
+    <Compile Include="Decorator\Formula\Add.cs" />
+    <Compile Include="Decorator\Formula\CalculationDecoratorBase.cs" />
+    <Compile Include="Decorator\Formula\Div.cs" />
+    <Compile Include="Decorator\Formula\FormulaBase.cs" />
+    <Compile Include="Decorator\Formula\IFormula.cs" />
+    <Compile Include="Decorator\Formula\Mul.cs" />
+    <Compile Include="Decorator\Formula\Program.cs" />
+    <Compile Include="Decorator\Formula\Sub.cs" />
     <Compile Include="Decorator\HalfPriceTopping.cs" />
     <Compile Include="Decorator\IPizza.cs" />
     <Compile Include="Decorator\OlivesTopping.cs" />
