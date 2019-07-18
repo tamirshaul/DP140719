@@ -43,6 +43,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bonus1\Program.cs" />
+    <Compile Include="Exercise10\BaseWindow.cs" />
+    <Compile Include="Exercise10\IWindow.cs" />
+    <Compile Include="Exercise10\Hazlala.cs" />
+    <Compile Include="Exercise10\Blinking.cs" />
+    <Compile Include="Exercise10\ThreeDLight.cs" />
+    <Compile Include="Exercise10\Colorized.cs" />
+    <Compile Include="Exercise10\Program.cs" />
+    <Compile Include="Exercise10\Shikuf.cs" />
+    <Compile Include="Exercise10\DecoratorBase.cs" />
+    <Compile Include="Exercise12\Computer.cs" />
+    <Compile Include="Exercise12\ComputerBuilder.cs" />
+    <Compile Include="Exercise12\ComputerFactoryMethod.cs" />
+    <Compile Include="Exercise12\GamerComputerBuilder.cs" />
+    <Compile Include="Exercise12\ComputerNotReadyException.cs" />
+    <Compile Include="Exercise12\SalonComputerBuilder.cs" />
+    <Compile Include="Exercise12\Program.cs" />
+    <Compile Include="Exercise12\OfficeComputerBuilder.cs" />
     <Compile Include="Exercise1\Game.cs" />
     <Compile Include="Exercise1\GameEndedLost.cs" />
     <Compile Include="Exercise1\GameEndedWin.cs" />
@@ -60,14 +78,26 @@
     <Compile Include="Exercise3\ICar.cs" />
     <Compile Include="Exercise3\ICarProxy.cs" />
     <Compile Include="Exercise3\Program.cs" />
+    <Compile Include="Exercise5\HandleError.cs" />
+    <Compile Include="Exercise5\HandleFatal.cs" />
+    <Compile Include="Exercise5\HandleInfo.cs" />
+    <Compile Include="Exercise5\LogHandlerBase.cs" />
+    <Compile Include="Exercise5\Program.cs" />
+    <Compile Include="Exercise5\SendSMS.cs" />
+    <Compile Include="Exercise6\FlyWeightFactory.cs" />
+    <Compile Include="Exercise6\NumberRepresentive.cs" />
+    <Compile Include="Exercise6\Program.cs" />
+    <Compile Include="Exercise6\VeryHeavyObject.cs" />
+    <Compile Include="Exercise8\HandsExercise.cs" />
+    <Compile Include="Exercise8\LegsExercise.cs" />
+    <Compile Include="Exercise8\Program.cs" />
+    <Compile Include="Exercise8\TemplateExerciseRunner.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Exercise4\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
