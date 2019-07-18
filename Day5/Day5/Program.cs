@@ -10,6 +10,9 @@ namespace Day5
     {
         static void Main(string[] args)
         {
+            // ########################## Strategy ################################
+
+            Day5.Strategy.Program.Strategy(args);
         }
     }
 }

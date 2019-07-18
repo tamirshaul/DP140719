@@ -45,6 +45,11 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strategy\ISort.cs" />
+    <Compile Include="Strategy\MergeSort.cs" />
+    <Compile Include="Strategy\NumberCollection.cs" />
+    <Compile Include="Strategy\Program.cs" />
+    <Compile Include="Strategy\QuickSort.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
