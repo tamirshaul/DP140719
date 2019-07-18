@@ -23,6 +23,10 @@ namespace Day4
             // ###################### Bridge ###############################
 
             Day4.Bridge.Program.Bridge(args);
+
+            // ###################### FlyWeight ############################
+
+            Day4.FlyWeight.Program.FlyWeight(args);
         }
     }
 }

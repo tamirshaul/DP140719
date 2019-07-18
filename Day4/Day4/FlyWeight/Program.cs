@@ -10,7 +10,19 @@ namespace Day4.FlyWeight
     {
         public static void FlyWeight(string[] args)
         {
+            PrintSequense("ANNNAAAAAOOOONNNAAAAAAAAA");
+        }
 
+        static void PrintSequense(string seq)
+        {
+            foreach (char c in seq)
+            {
+
+                for (int i = 0; i < VeryHeavyObject.MAX_SIZE; i++)
+                {
+                    Console.WriteLine(FlyWeightFactory.GetHeavyObjects(c)[i]);
+                }
+            }
         }
     }
 }

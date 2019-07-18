@@ -6,36 +6,46 @@ using System.Threading.Tasks;
 
 namespace Day4.FlyWeight
 {
-    public class FlyWeightFactory<T>
+    public static class FlyWeightFactory
     {
-        Dictionary<char, VeryHeavyObject> repository = new Dictionary<char, VeryHeavyObject>();
 
-        VeryHeavyObject GetHeavyObjects(char typeOfObject)
+        private static Dictionary<char, VeryHeavyObject> respository = new Dictionary<char, VeryHeavyObject>();
+        private static object key = new object();
+        public static VeryHeavyObject GetHeavyObjects(char typeOfObject)
         {
-            if(this.repository.TryGetValue(typeOfObject, out VeryHeavyObject result))
+            if (respository.TryGetValue(typeOfObject, out VeryHeavyObject result))
             {
                 return result;
             }
 
-            VeryHeavyObject newObject = null;
-
-            switch (typeOfObject)
+            lock (key)
             {
-                case 'A':
-                    newObject = new VeryHeavyObject();
-                    break;
-                case 'N':
-                    newObject = new VeryHeavyObject();
-                    break;
-                case 'O':
-                    newObject = new VeryHeavyObject();
-                    break;
 
+                if (respository.TryGetValue(typeOfObject, out VeryHeavyObject resultAgain))
+                {
+                    return resultAgain;
+                }
+
+                VeryHeavyObject newObject = null;
+
+                switch (typeOfObject)
+                {
+                    case 'A':
+                        newObject = new VeryHeavyObject();
+                        break;
+                    case 'N':
+                        newObject = new VeryHeavyObject();
+                        break;
+                    case 'O':
+                        newObject = new VeryHeavyObject();
+                        break;
+                }
+
+                respository[typeOfObject] = newObject;
+
+                return newObject;
             }
 
-            repository[typeOfObject] = newObject;
-
-            return newObject;
         }
     }
 }
