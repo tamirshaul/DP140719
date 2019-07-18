@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bonus1\Program.cs" />
-    <Compile Include="Bonus2\Program.cs" />
     <Compile Include="Exercise10\BaseWindow.cs" />
     <Compile Include="Exercise10\IWindow.cs" />
     <Compile Include="Exercise10\Hazlala.cs" />

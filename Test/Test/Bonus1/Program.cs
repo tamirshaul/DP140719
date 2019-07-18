@@ -10,27 +10,47 @@ namespace Test.Bonus1
     {
         public static void Bonus1(string[] args)
         {
-            int[] arr = { 1, 1,10,10,9,9,5,6,6 };
+            int[] arr = { 1, 1,2,2,10,107,9,9,5,6,6 };
 
             Console.WriteLine(Recurse(arr));
 
         }
 
-        public static int CheckArray(int[] arr, int index)
+        public static int Recurse(int[] arr)
         {
-            if(arr[index] != arr[index + 1])
+            return CheckArr(arr, 0, arr.Length - 1);
+        }
+
+        public static int CheckArr(int[] arr, int i, int j)
+        {
+            if (j - i == 1)
             {
-                return arr[index];
+                return i % 2 == 0 ? arr[i] : arr[j];
+            }
+
+            int half = (i+j) / 2;
+            if(arr[half] == arr[half + 1])
+            {
+                if(half % 2 == 0)
+                {
+                    return CheckArr(arr, half, j);
+                }
+                else
+                {
+                    return CheckArr(arr, i, half);
+                }
             }
             else
             {
-                return CheckArray(arr, index + 2);
+                if (half % 2 == 0)
+                {
+                    return CheckArr(arr, i, half);
+                }
+                else
+                {
+                    return CheckArr(arr, half, j);
+                }
             }
-        }
-
-        public static int Recurse(int[] arr)
-        {
-            return CheckArray(arr, 0);
         }
     }
 }
